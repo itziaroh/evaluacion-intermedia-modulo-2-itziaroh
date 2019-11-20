@@ -20,11 +20,10 @@ function checkSelectedNumber() {
     }
     if (parseInt(numberInput.value) < getRandomNumber()) {
         clueText.innerHTML = 'Demasiado bajo';
-    }
-    if (getRandomNumber() < parseInt(numberInput.value)) {
+    } else if (getRandomNumber() < parseInt(numberInput.value)) {
         clueText.innerHTML = 'Demasiado alto';
     }
-    if (parseInt(numberInput.value < 1 || parseInt(numberInput.value) > 100)) {
+    if (parseInt(numberInput.value) < 1 || parseInt(numberInput.value) > 100) {
         clueText.innerHTML = 'El número debe estar entre 1 y 100';
     }
 }
