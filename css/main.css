@@ -1,0 +1,24 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.number_input{
+    width: 200px;
+}
+
+.button{
+    width: 80px;
+    margin-top: 5px;
+    background-color: cornflowerblue ;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.clue, .attempt {
+    border: solid gray 3px;
+    padding: 3px;
+}
